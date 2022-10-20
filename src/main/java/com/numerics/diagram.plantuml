@@ -1,0 +1,29 @@
+@startuml Diagram
+!theme mars
+skinparam style strictuml
+skinparam SequenceMessageTextAlignment center
+class App { 
+    main()
+}
+class zamianaBazy { 
+    zamien()
+}
+class dodawanie {
+    dodaj()
+    zamien() : zamienBazy
+}
+class odejmowanie { 
+    odejmij()
+    zamien() : zamienBazy
+}
+class koniec_programu {
+    return()
+}
+diamond 1
+App --> 1
+1 -> zamianaBazy : wybor 1
+1 --> dodawanie : wybor 2
+1 --> odejmowanie : wybor 3
+koniec_programu <- 1 : wybor 4
+
+@enduml
