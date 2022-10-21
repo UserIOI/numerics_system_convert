@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) {
         while(true){
             String liczba1, liczba2;
-            int baz1, baz2,baz3;
+            int baz1, baz2,baz3, abc;
             System.out.println("Wybierz co chcesz zrobic:");
             System.out.println("1. Zamien baze liczby");
             System.out.println("2. Dodaj liczby");
